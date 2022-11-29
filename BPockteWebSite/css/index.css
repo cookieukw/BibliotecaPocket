@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all cubic-bezier(.88, .06, 0 ,.99);
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.945), transparent);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    column-gap: 4vw;
+}
+#list li {
+    padding: 1.5rem;
+}
+#list li a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    transition: all 0.30s;
+}
+
+
+#list li a:hover {
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: justify;
+    background-size: cover;
+}
+
+section#about {
+    background-image: url("../images/book.jpg");
+    padding-top: 5rem;
+}
+section#download {
+    background-image: url("../images/book2.jpg");
+}
+
+section h1 {
+    color: black;
+    background: rgba(255, 255, 255, 0.767);
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+}
+
+#logo {
+    width: 30vh;
+    height: 30vh;
+}
+
+.button {
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    border-style: none;
+    background:rgba(255, 255, 255, 0.842);
+    cursor: pointer;
+    box-shadow: inset;
+    transition: all 1s;
+}
+.button:hover {
+    background:rgba(1, 36, 88, 0.842);
+    color: white;
+
+}
+
+@media (max-width: 500px){
+    #logo {
+        width: 24vh;
+        height: 24vh;
+    }
+    section h1 {
+        margin: 1.2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        padding: 1rem;
+    }
+}
+
+.swiper {
+    width:70vw;
+    height: 60vh;
+    background: white;
+    border-radius: 2rem;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
